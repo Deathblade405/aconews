@@ -1,0 +1,52 @@
+/* Pagination Styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  button {
+    background: #007bff; /* Button background */
+    color: #ffffff; /* Button text color */
+    border: none;
+    border-radius: 50px; /* Pill-shaped button */
+    padding: 12px 24px; /* Increased padding */
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  button:hover {
+    background: #0056b3; /* Darker background on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  }
+  
+  button:disabled {
+    background: #cccccc; /* Disabled button background */
+    cursor: not-allowed; /* Disabled cursor */
+    box-shadow: none; /* No shadow for disabled state */
+  }
+  
+  button:disabled:hover {
+    background: #cccccc; /* Keep disabled background */
+    transform: none; /* No hover effect for disabled state */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    button {
+      padding: 10px 20px; /* Adjusted padding */
+      font-size: 14px; /* Smaller font size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    button {
+      padding: 8px 16px; /* Further reduced padding */
+      font-size: 12px; /* Even smaller font size */
+    }
+  }
+  

@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { FaMoon, FaSun } from 'react-icons/fa';
+import HomePage from './pages/HomePage';
+import './index.css';
 
 function App() {
+  const [searchQuery, setSearchQuery] = useState('latest');
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(prevMode => !prevMode);
+    document.documentElement.classList.toggle('dark', !isDarkMode);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`app-container ${isDarkMode ? 'dark' : ''}`}>
+      <button
+        className="dark-mode-toggle"
+        onClick={toggleDarkMode}
+      >
+        {isDarkMode ? <FaSun className="icon" /> : <FaMoon className="icon" />}
+        <span className="toggle-text">
+          {isDarkMode ? ' Light Mode' : ' Dark Mode'}
+        </span>
+      </button>
+      <HomePage searchQuery={searchQuery} />
     </div>
   );
 }
