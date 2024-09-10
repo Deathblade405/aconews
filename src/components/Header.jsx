@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaMoon, FaSun } from 'react-icons/fa'; // Import moon and sun icons from react-icons
-import './Header.css'; // Ensure the CSS file is imported
+import { FaMoon, FaSun } from 'react-icons/fa';
+import './Header.css'; 
 
 const Header = ({ searchQuery, setSearchQuery, toggleDarkMode, isDarkMode }) => {
   return (

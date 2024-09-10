@@ -1,7 +1,7 @@
-/* NewsCard Styles */
+
 .news-card {
-    background: #ffffff; /* Clean white background */
-    border-radius: 15px; /* Soft rounded corners */
+    background: #ffffff; 
+    border-radius: 15px; 
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     overflow: hidden; /* Clip content that overflows */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
@@ -10,9 +10,9 @@
     flex-direction: column;
     max-width: calc(100% / 2 - 30px); /* Responsive card width */
     background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(240, 240, 240, 1) 100%); /* Elegant gradient */
-    border: 1px solid #e0e0e0; /* Light border for separation */
-    position: relative; /* Position for overlay */
-    overflow: hidden; /* Ensure content stays within rounded corners */
+    border: 1px solid #e0e0e0; 
+    position: relative; 
+    overflow: hidden; 
   }
   
   .news-card img {
@@ -61,9 +61,9 @@
   }
   
   a:hover {
-    color: #0056b3; /* Darker link color on hover */
-    transform: translateY(-2px); /* Slight lift effect */
-    border-bottom-color: #0056b3; /* Change underline color */
+    color: #0056b3; 
+    transform: translateY(-2px);
+    border-bottom-color: #0056b3; 
   }
   
   .news-card:hover {
@@ -80,15 +80,15 @@
   
   @media (max-width: 480px) {
     .news-card {
-      max-width: calc(100% - 20px); /* Further adjustment for very small screens */
+      max-width: calc(100% - 20px); 
     }
   
     .news-card img {
-      height: 180px; /* Adjust image height for small screens */
+      height: 180px; 
     }
   
     .content {
-      padding: 15px; /* Adjust padding for small screens */
+      padding: 15px; 
     }
   }
   
